@@ -1,0 +1,48 @@
+<!Doctype HTML>
+<html lang="ca">
+  <head>
+    <title>Polsera monitoratge</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="styles/estil.css" type="text/css" media="all">
+  </head>
+
+  <!--><body>
+    <header id="headweb">
+      Nom equip
+    </header>
+    <nav>
+      <ul>
+        <li id="index"><a href="inici.html"><b>Inici</b></a></li>
+        <li><a href="equip.html"> <b>Qui som?</b></a></li>
+        <li><a href="dades.html"> <b>Consulta les teves dades</b></a></li>
+      </ul>
+    </nav><-->
+    <body id="top">
+      <div class="wrapper row0">
+        <div id="topbar" class="hoc clear">
+          <ul class="nospàce">
+            <li><i class="fa fa-envelope-o"></i>info@domain.com</li>
+            <li><a href="inici.html"><i class="fa fa-lg fa-home"></i></a></li>
+            <li><a href="#" title="Help Center"><i class="fa fa-life-bouy"></i></a></li>
+            <li><a href="#" title="Login"><i class="fa fa-lg fa-sign-in"></i></a></li>
+            <li><a href="#" title="Sign Up"><i class="fa fa-lg fa-edit"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+    <section>
+      <h1>Benvingut...</h1>
+    </section>
+    <aside>
+      <header>Enllaços d'interès</header>
+      <ul class="asidenav">
+        <li class="sidebutton"><a href="https://escriny.epsem.upc.edu/svn/int-sistemes-cortada-tous"><b>Control de versions</b></a></li>
+      </ul>
+    </aside>
+
+  </body>
+
+</html>

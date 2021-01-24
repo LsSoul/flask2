@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+ 
+import sqlite3 as lite
+
+import telebot # Librería de la API del bot.
+ 
+import time # Librería para hacer que el programa que controla el bot no se acabe.
+ 
+ 
+TOKEN = '1505275276:AAHwAv31H3a5QZj5-kKT1UbBsF7LH1uMQnM'
+ 
+
+bot = telebot.TeleBot(TOKEN)
+
+@bot.message_handler(commands=['start'])
+def send_welcome(message):
+    cid=message.chat.id
+    user=message.from_user.firstname
+    con = lite.connect("telegramids.db")
+    cur = con.cursor()
+    cur.execute("INSERT INTO USER(tele_id,username) VALUES(?,?)",(cid,user))
+    if con:
+        con.close()
+    bot.reply_to(message, "Hola, has sido guardado correcta,mente en nuestra base de datos")
